@@ -1,6 +1,6 @@
 # Homework4
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+This project was generated with Angular CLI version 15.2.4. The app makes calls to the Alpha Vantage API to get real time stock data, and then plots this data using the Angular directive NGX eCharts. It also makes use of Angular routing to show different pages based on different queries. It should be noted that Alpha Vantage only allows a certain number of API calls per minute/per day, so an influx of queries can result in a failed search.
 
 ## Development server
 

@@ -1,0 +1,14 @@
+#chart{
+  padding-top: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
+  height: 80%;
+}
+#info{
+  display: inline-flex;
+}
+#apiError{
+  font-size: 40px;
+  padding: 10%;
+}
+

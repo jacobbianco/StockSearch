@@ -1,0 +1,12 @@
+
+<h1 *ngIf="apiError" id="apiError"> {{apiError}} </h1>
+
+<div *ngIf="chartOptions" echarts [options]="chartOptions" id="chart"></div>
+
+<div *ngIf="chartOptions" id="info">
+    <h1> High: {{high}} </h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <h1> Low: {{low}}</h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <h1> Open: {{open}}</h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <h1> Close: {{close}}</h1>
+</div>
+

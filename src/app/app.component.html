@@ -1,0 +1,27 @@
+<mat-toolbar class="custom_toolbar">
+
+  <div class="nav_div">
+    <mat-icon class="icon"> find_replace </mat-icon>
+    <h1 style="font-size: 150%;"> {{siteName}}</h1>
+  </div>
+
+  <div class="nav_div">
+    <mat-icon class="icon"> search </mat-icon>
+    <input class="search_bar" (keyup.enter)="navigate(query)" placeholder="Search for a stock..." type="text" [(ngModel)] = "query">
+  </div>
+
+  <div id="home_div" class="nav_div">
+    <mat-icon class="icon"> home </mat-icon>
+    <a [routerLink] = "'/home'"> Home </a>
+  </div>
+
+</mat-toolbar>
+
+<div style="height: 7%;"></div>
+
+<div class="info_container">
+
+  <router-outlet></router-outlet>
+
+</div>
+
